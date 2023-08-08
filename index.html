@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -15,6 +15,124 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- <h1 class="text-primary">Hola Koders!</h1> -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!--Button Ofcanvas-->
+          <button
+            class="c-btn c-btn--icon-alone js-hamburger-trigger mx-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"><img src="" alt="" /></span>
+          </button>
+
+          <!--Logo button-->
+          <a class="site-logo">
+            <img
+              src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt=""
+            />
+          </a>
+
+          <!--Lupa Icon-->
+          <a href="">
+            <img src="./img/icons/lupa.svg" alt="" />
+          </a>
+
+          <!--Create Account Button-->
+          <button class="btn btn-outline-success" type="submit">
+            Create Account
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <aside class="d-sm-none d-md-block bg-primary"></aside>
+          <main class="posts_container col-12">
+            <div class="card">
+              <img
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--bi8ayJWG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p440p6v0qc709csgk7kj.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Creating a Sinatra API with system-wide dependency injection
+                  using dry-system and rom-rb
+                </h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <ul class="card__tags d-flex flex-wrap list-unstyled">
+                  <li class="card__tag me-2">#ruby</li>
+                  <li class="card__tag me-2">#programming</li>
+                  <li class="card__tag me-2">#architecture</li>
+                  <li class="card__tag me-2">#sinatra</li>
+                  <li class="card__tag me-2">#bootstrap</li>
+                </ul>
+              </div>
+            </div>
+          </main>
+          <aside class="col-3"></aside>
+        </div>
+      </div>
+    </header>
+
+    <!--Offcanvas-->
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Offcanvas end-->
     <!-- BOOTSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
