@@ -16,3 +16,19 @@
     text-decoration: none;
     outline: 0px;
 }
+
+.card {
+    margin-bottom: 5px;
+}
+
+.anchor--decoration{
+    text-decoration: none;
+}
+
+.offcanvas--buttons-1{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: red($color: #000000);
+}
