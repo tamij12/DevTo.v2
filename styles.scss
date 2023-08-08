@@ -1,0 +1,18 @@
+
+
+.site-logo {
+    max-width: var(--max-width, 125px);
+    font-size: var(--font-size, var(--fs-base));
+    font-weight: var(--font-weight, var(--fw-medium));
+    display: inline-flex;
+    flex-shrink: 0;
+    align-self: center;
+    align-items: center;
+    vertical-align: middle;
+    color: var(--base-100);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+    outline: 0px;
+}
