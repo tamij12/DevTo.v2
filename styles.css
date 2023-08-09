@@ -23,10 +23,57 @@
   text-decoration: none;
 }
 
+/* offcanvas */
+.offcanvas.offcanvas-start {
+  width: 300px;
+}
+
 .offcanvas--buttons-1 {
   display: block;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   background-color: 0;
+}
+
+.crayons-card {
+  border-radius: var(--radius-auto);
+  background: var(--card-bg);
+  color: var(--card-color);
+  box-shadow: 0 0 0 1px var(--card-secondary-border);
+  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
+  /* padding-left: 10px;
+  padding-right: 80px; */
+}
+
+.crayons-subtitle {
+  font-size: large;
+  color: var(--base-90);
+}
+
+.create-account__btn {
+  font-size: 16px;
+}
+
+.navagation-links {
+  list-style: none;
+  padding: 0;
+}
+
+.lg__button:hover {
+  background-color: rgb(80, 99, 255);
+}
+
+.home-icon {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icons {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=styles.css.map */
