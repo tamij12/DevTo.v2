@@ -17,7 +17,7 @@
   <body>
     <!-- <h1 class="text-primary">Hola Koders!</h1> -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid d-flex">
           <!--Button Ofcanvas-->
           <button
@@ -100,14 +100,22 @@
               alt="..."
             />
             <div class="card-body">
-              <button class="user__button" type="submit">
-                <span>
-                  <img
-                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--4zZ4vSLE--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1135735/1821abf9-98b8-4d79-a4f1-859ca0ef2a5f.png"
-                    alt=""
-                  />
-                </span>
-              </button>
+              <div class="card__top--content d-flex flex-row">
+                <div class="card__top--photo-name d-flex flex-row">
+                  <a class="user__button" type="submit">
+                    <span>
+                      <img
+                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--4zZ4vSLE--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1135735/1821abf9-98b8-4d79-a4f1-859ca0ef2a5f.png"
+                        alt=""
+                      />
+                    </span>
+                  </a>
+                  <div>
+                    <a href="">jherson</a>
+                    <a href=""> jherson</a>
+                  </div>
+                </div>
+              </div>
               <h5 class="card-title">
                 Creating a Sinatra API with system-wide dependency injection
                 using dry-system and rom-rb
@@ -152,6 +160,64 @@
                   <span>14</span>
                 </div>
               </a>
+              <div class="card__comments--container">
+                <div class="card__comment--item d-flex">
+                  <div class="card__comment--image">
+                    <a href=""
+                      ><span
+                        ><img
+                          src="https://res.cloudinary.com/practicaldev/image/fetch/s--bqhtZWBh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/68266/a52576e7-3c2a-460e-944f-b8f5ba2af41c.jpg"
+                          alt="" /></span
+                    ></a>
+                  </div>
+                  <div class="card__comment--body">
+                    <div class="card__comment--body--name--date d-flex">
+                      <p>Casper 6 days ago</p>
+                    </div>
+                    <div
+                      class="card__comment--body--content d-flex justify-content-center"
+                    >
+                      <p>
+                        I find myself going back and forth on this subject
+                        because while I agree, it should be a good thing to rely
+                        on the tools, I have seen beginners rely too much on it
+                        to the point where if they needed to write the most
+                        basic of thing...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__comment--item d-flex">
+                  <div class="card__comment--image">
+                    <a href=""
+                      ><span
+                        ><img
+                          src="https://res.cloudinary.com/practicaldev/image/fetch/s--NlfbOS9M--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/976635/cbd32d54-eb39-4cbe-81f7-000df3554a8c.jpeg"
+                          alt="" /></span
+                    ></a>
+                  </div>
+                  <div class="card__comment--body">
+                    <div class="card__comment--body--name--date">
+                      <p>Ben Halpern Aug 2</p>
+                    </div>
+                    <div class="card__comment--body--content">
+                      <p>
+                        I completely agree that you don't want a single mentor.
+                        The idea of having lots of people in your corner that
+                        you can talk to and get diverse opinions.
+                      </p>
+                      <p>
+                        The self direction and continuous learning component
+                        here is important too. Thanks!
+                      </p>
+                      <p>Kudos.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <p>See all 18 comments</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -216,6 +282,38 @@
                   <span class="reaction--counter">123</span>
                 </div>
               </a>
+              <div class="card__comments--container">
+                <div class="card__comment--item d-flex">
+                  <div class="card__comment--image">
+                    <a href=""
+                      ><span
+                        ><img
+                          src="https://res.cloudinary.com/practicaldev/image/fetch/s--bqhtZWBh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/68266/a52576e7-3c2a-460e-944f-b8f5ba2af41c.jpg"
+                          alt="" /></span
+                    ></a>
+                  </div>
+                  <div class="card__comment--body">
+                    <div class="card__comment--body--name--date d-flex">
+                      <p>Casper 6 days ago</p>
+                    </div>
+                    <div
+                      class="card__comment--body--content d-flex justify-content-center"
+                    >
+                      <p>
+                        I find myself going back and forth on this subject
+                        because while I agree, it should be a good thing to rely
+                        on the tools, I have seen beginners rely too much on it
+                        to the point where if they needed to write the most
+                        basic of thing...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <p>See all 18 comments</p>
+                </div>
+              </div>
             </div>
           </div>
 
