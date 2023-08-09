@@ -24,19 +24,55 @@
   width: 40px;
   height: 40px;
   border-radius: 9999px;
-  margin: none;
   border: none;
 }
 .user__button img {
   width: 100%;
 }
 
+.c-btn {
+  border: none;
+  background: none;
+}
+
 .card {
   margin-bottom: 5px;
 }
 
+.card-top {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sponsorship__header {
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sponsorship__header__button {
+  background: none;
+  border: none;
+}
+
+.card__title__header {
+  margin-left: 16px;
+  margin-right: 170px;
+}
+
+.itag__link--h3 {
+  color: #525252;
+  font-size: 14px;
+}
+
+.ltag__link__tag {
+  color: #404040;
+  font-size: 12px;
+}
+
 .anchor--decoration {
   text-decoration: none;
+  color: #575757;
+  padding-right: 12px;
 }
 
 .offcanvas--buttons-1 {
