@@ -15,9 +15,20 @@
   outline: 0px;
   width: 50px;
   height: 40px;
+  margin-right: auto;
 }
 .site-logo img {
   width: 100%;
+}
+
+.search-logo {
+  filter: invert(20%) sepia(18%) saturate(19%) hue-rotate(57deg) brightness(99%) contrast(84%);
+  margin-right: 3%;
+}
+
+.notifications-logo {
+  filter: invert(20%) sepia(18%) saturate(19%) hue-rotate(57deg) brightness(99%) contrast(84%);
+  margin-right: 3%;
 }
 
 .user__button {
@@ -28,6 +39,20 @@
 }
 .user__button img {
   width: 100%;
+}
+
+.create-post__button {
+  color: rgb(59, 73, 223);
+  height: 40px;
+  width: 120px;
+  padding-top: 8px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-left: auto;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 3%;
 }
 
 .c-btn {

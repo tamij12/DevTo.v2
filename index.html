@@ -17,7 +17,7 @@
   <body>
     <!-- <h1 class="text-primary">Hola Koders!</h1> -->
     <header class="header__nav bg-light">
-      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary shadow-sm">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
         <div class="container-fluid d-flex">
           <!--Button Ofcanvas-->
           <button
@@ -40,13 +40,37 @@
             />
           </a>
 
-          <!--Lupa Icon-->
-          <a href="">
+          <div
+            class="collapse navbar-collapse position-relative mb-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-0 m-lg-2"></ul>
+            <form class="d-md-flex w-50" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <button
+                class="border-0 bg-body position-absolute end-50 bg-transparent mt-1"
+              >
+                <img src="./img/icons/lupa.svg" alt="Search icon" />
+              </button>
+            </form>
+            <!--Create Post Button-->
+            <a href="" class="create-post__button">Create Post</a>
+          </div>
+
+          <!--Search Icon-->
+          <a class="search-logo d-block d-lg-none" href="">
             <img src="./img/icons/lupa.svg" alt="" />
           </a>
 
           <!--Notification bell-->
-          <a href=""><img src="./img/icons/bell.svg" alt="" /></a>
+          <a class="notifications-logo" href=""
+            ><img src="./img/icons/bell.svg" alt=""
+          /></a>
 
           <!--User Account Button-->
           <button class="user__button" type="submit">
@@ -57,17 +81,6 @@
               />
             </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </form>
-          </div>
         </div>
       </nav>
     </header>
@@ -255,7 +268,7 @@
                   <a href="/devteam" class="ltag__link__link">
                     <div class="ltag__link__org__pic">
                       <img
-                      class="rounded mt-3 ms-3"
+                        class="rounded mt-3 ms-3"
                         src="https://res.cloudinary.com/practicaldev/image/fetch/s--b4kmlB-n--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://res.cloudinary.com/practicaldev/image/fetch/s--CMkjYEfB--/c_fill%2Cf_auto%2Cfl_progressive%2Ch_150%2Cq_auto%2Cw_150/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/9a7650bd-c94f-4330-b5af-ef29fbec1a39.jpg"
                         alt="The DEV Team"
                         width="33"
@@ -264,7 +277,7 @@
                       />
                       <div class="ltag__link__user__pic">
                         <img
-                        class="rounded-circle"
+                          class="rounded-circle"
                           src="https://res.cloudinary.com/practicaldev/image/fetch/s--N3P2qXdp--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://res.cloudinary.com/practicaldev/image/fetch/s--vHKcEiTe--/c_fill%2Cf_auto%2Cfl_progressive%2Ch_150%2Cq_auto%2Cw_150/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/3/13d3b32a-d381-4549-b95e-ec665768ce8f.png"
                           alt=""
                           width="15"
@@ -279,8 +292,12 @@
                     class="ltag__link__link text-decoration-none"
                   >
                     <div class="ltag__link__content p-3">
-                      <h2 class="text-black fw-bold fs-5">Is Manual Testing Superior to Automated Testing?</h2>
-                      <h3 class="itag__link--h3 mb-0">dev.to staff for The DEV Team ・ Jul 7</h3>
+                      <h2 class="text-black fw-bold fs-5">
+                        Is Manual Testing Superior to Automated Testing?
+                      </h2>
+                      <h3 class="itag__link--h3 mb-0">
+                        dev.to staff for The DEV Team ・ Jul 7
+                      </h3>
                       <div class="ltag__link__taglist">
                         <span class="ltag__link__tag">#discuss</span>
                       </div>
