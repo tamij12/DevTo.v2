@@ -1,4 +1,9 @@
 
+.body-primary{
+    background-color: whitesmoke;
+}
+
+
 .site-logo {
     max-width: var(--max-width, 125px);
     font-size: var(--font-size, var(--fs-base));
@@ -24,6 +29,35 @@
 .user__button{
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    margin: none;
+    border: none;
+    img{
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+
+
+.card__comment--image {
+    width: 110px;
+    height: 32px;
+    img{
+        border-radius: 50%;
+        width: 25px;
+    }
+}
+
+.card__comment--image--final{
+    display: flex;
+    align-items: flex-start;
+}
+
+.card__comment--body--name--date{
+    position: relative;
+    left: calc(20% - 30px);
+    top: 10px;
     border-radius: 9999px;
     border: none;
     img{
@@ -38,9 +72,48 @@
 .card {
     margin-bottom: 5px;
 }
+<<<<<<< HEAD
 .icon__dev__card{
 
+=======
+
+.card__top--content{
+    width: 273px;
+    height: 35px;
+    padding-bottom: 45px;
+>>>>>>> cfb5ca8397192260250841ceeae6fd3ce615daa8
 }
+.card__top--photo-name{
+    width: 148px;
+    height: 35px;
+}
+
+.name__date--container{
+    position: relative;
+    left: calc(20% - 50px);
+    top: calc(20% - 10px);
+    font-size: 11px;
+    width: 207px;
+    a{
+    text-decoration: none;
+    color: black;
+    }
+}
+
+.number__of__coments{
+    position: relative;
+    right: 15px;
+}
+
+.card__comment--item{
+    margin-top: 10px;
+}
+
+.card__comment--body{
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
 .sponsorship__header{
     align-items: center;
     margin-top: 10px;
@@ -61,6 +134,7 @@
     color: #404040;
     font-size: 12px;
 }
+<<<<<<< HEAD
 .ltag__link__user__pic{
     margin-right: 30px;
     position: relative;
@@ -68,11 +142,62 @@
     position: relative;
     bottom: calc(-27px);
     left: calc(34px);
+=======
+
+.card__comment--body--content{
+    padding: 30px;
+>>>>>>> cfb5ca8397192260250841ceeae6fd3ce615daa8
 }
 .anchor--decoration{
     text-decoration: none;
     color: #575757;
     padding-right: 12px;
+}
+
+.main__reaction--container{
+    padding-left: calc(0.5rem - 5px)
+}
+
+.multiple__reactions--container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    left: -19px;
+    .reaction--item{
+        display: inline-block;
+        background-color: whitesmoke;
+        border: 2px solid white;
+        border-radius: 15px;
+        margin-right: -0.75em;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.multiple__reactions__number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 186.5px;
+    height: 36px;
+    .main__reaction--container{
+        width: 122px;
+        height: 100%;
+    }
+}
+.last__minute__reaction{
+    display: flex;
+    align-items: center;
+    width: 30px;
+    .fs-xs{
+        font-size: 0.75rem;
+    }
+    .mr-2{
+        margin-right: 0.5rem;
+    }
 }
 
 .offcanvas--buttons-1{
