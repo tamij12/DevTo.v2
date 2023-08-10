@@ -27,10 +27,8 @@
 .user__button {
   width: 40px;
   height: 40px;
-
   border-radius: 50%;
   margin: none;
-
   border: none;
 }
 .user__button img {
@@ -56,6 +54,11 @@
   position: relative;
   left: calc(20% - 30px);
   top: 10px;
+  border-radius: 9999px;
+  border: none;
+}
+.card__comment--body--name--date img {
+  width: 100%;
 }
 
 .c-btn {
@@ -67,8 +70,6 @@
   margin-bottom: 5px;
 }
 
-<<<<<<< HEAD
-=======
 .card__top--content {
   width: 273px;
   height: 35px;
@@ -106,14 +107,6 @@
   border-radius: 5px;
 }
 
-.card__comment--body--content {
-  padding: 30px;
-.card-top {
-  align-items: center;
-  justify-content: space-between;
-}
-
->>>>>>> cfb5ca8397192260250841ceeae6fd3ce615daa8
 .sponsorship__header {
   align-items: center;
   margin-top: 10px;
@@ -146,6 +139,10 @@
   position: relative;
   bottom: -27px;
   left: 34px;
+}
+
+.card__comment--body--content {
+  padding: 30px;
 }
 
 .anchor--decoration {
