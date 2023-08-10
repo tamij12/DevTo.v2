@@ -16,9 +16,9 @@
   </head>
   <body class="body-primary">
     <!-- <h1 class="text-primary">Hola Koders!</h1> -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <header class="header__nav bg-light">
+      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container-fluid d-flex">
           <!--Button Ofcanvas-->
           <button
             class="c-btn c-btn--icon-alone js-hamburger-trigger mx-2 d-md-none"
@@ -45,9 +45,17 @@
             <img src="./img/icons/lupa.svg" alt="" />
           </a>
 
-          <!--Create Account Button-->
-          <button class="btn btn-outline-success" type="submit">
-            Create Account
+          <!--Notification bell-->
+          <a href=""><img src="./img/icons/bell.svg" alt="" /></a>
+
+          <!--User Account Button-->
+          <button class="user__button" type="submit">
+            <span>
+              <img
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--4zZ4vSLE--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1135735/1821abf9-98b8-4d79-a4f1-859ca0ef2a5f.png"
+                alt=""
+              />
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
@@ -64,33 +72,191 @@
       </nav>
     </header>
     <!--Main Section Container-->
-    <div class="container container-fluid">
+    <div class="container">
       <div class="row">
         <aside class="d-sm-none col-md-3 d-md-block bg-primary"></aside>
+
         <main class="posts_container col-12 col-md-9 col-lg-6">
           <header class="p-2 px-3 m:p-0 m:px-0 m:mb-2">
+            
             <nav class="-mx-3 m:mx-0 s:flex items-center justify-between">
               <ul class="d-flex list-unstyled">
                 <li class="me-2">
-                  <a class="anchor--decoration" data-text="Relevant" href=""
+                  <a
+                    class="anchor--decoration fs-5 text-black fw-bold"
+                    data-text="Relevant"
+                    href=""
                     >Relevant</a
                   >
                 </li>
                 <li class="me-2">
-                  <a class="anchor--decoration" href="">Latest</a>
+                  <a class="anchor--decoration fs-5" href="">Latest</a>
                 </li>
                 <li class="me-2">
-                  <a class="anchor--decoration" href="">Top</a>
+                  <a class="anchor--decoration fs-5" href="">Top</a>
                 </li>
               </ul>
             </nav>
           </header>
+          <!-- Cards Main -->
           <div class="card">
             <img
-              src="https://res.cloudinary.com/practicaldev/image/fetch/s--bi8ayJWG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p440p6v0qc709csgk7kj.png"
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--KtT0qK2I--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/j6e0763icp0a80ilsw0q.png"
               class="card-img-top"
               alt="..."
             />
+            <div class="card-body">
+
+              <div class="card__top--content d-flex flex-row">
+                <div class="card__top--photo-name d-flex flex-row">
+                  <div class="card__comment--image">
+                    <a class="card__comment--image--final d-flex"
+                      ><span
+                        ><img
+                          src="https://res.cloudinary.com/practicaldev/image/fetch/s--bqhtZWBh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/68266/a52576e7-3c2a-460e-944f-b8f5ba2af41c.jpg"
+                          alt="" /></span
+                    ></a>
+                  </div>
+                  <div class="name__date--container d-flex flex-column">
+                    <a href="">Casper</a>
+                    <a href=""> Aug 3 (6days ago)</a>
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="card-title">
+                Creating a Sinatra API with system-wide dependency injection
+                using dry-system and rom-rb
+              </h5>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <ul class="card__tags d-flex flex-wrap list-unstyled">
+                <li class="card__tag me-2">#ruby</li>
+                <li class="card__tag me-2">#programming</li>
+                <li class="card__tag me-2">#architecture</li>
+                <li class="card__tag me-2">#sinatra</li>
+                <li class="card__tag me-2">#bootstrap</li>
+              </ul>
+
+              <div class="multiple__reactions__number">
+                <a class="main__reaction--container" href="">
+
+                  <span class="multiple__reactions--container">
+                    <span class="reaction--item">
+                      <img
+                        src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                        alt="" /></span
+                    ><span class="reaction--item">
+                      <img
+                        src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                        alt=""
+                    /></span>
+                  </span>
+                  <span class="reaction--counter">123</span>
+
+                  <a class="d-flex align-items-center">
+                    <img src="./img/icons/messaje.svg" alt="" />
+                    <span>14</span>
+                  </a>
+                  <div class="last__minute__reaction">
+                    <small class="mr-2 fs-xs">1 min read</small>
+                  </div>
+                </a>
+              </div>
+              <div class="card__comments--container">
+                <div class="card__comment--item d-flex">
+                  <div class="card__comment--image">
+                    <a class="card__comment--image--final d-flex"
+                      ><span
+                        ><img
+                          src="https://res.cloudinary.com/practicaldev/image/fetch/s--bqhtZWBh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/68266/a52576e7-3c2a-460e-944f-b8f5ba2af41c.jpg"
+                          alt="" /></span
+                    ></a>
+                  </div>
+                  <div class="card__comment--body">
+                    <div class="card__comment--body--name--date d-flex">
+                      <p>Casper 6 days ago</p>
+                    </div>
+                    <div
+                      class="card__comment--body--content d-flex justify-content-center"
+                    >
+                      <p>
+                        I find myself going back and forth on this subject
+                        because while I agree, it should be a good thing to rely
+                        on the tools, I have seen beginners rely too much on it
+                        to the point where if they needed to write the most
+                        basic of thing...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__comment--item d-flex">
+                  <div class="card__comment--image">
+                    <a href=""
+                      ><span
+                        ><img
+                          src="https://res.cloudinary.com/practicaldev/image/fetch/s--NlfbOS9M--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/976635/cbd32d54-eb39-4cbe-81f7-000df3554a8c.jpeg"
+                          alt="" /></span
+                    ></a>
+                  </div>
+                  <div class="card__comment--body">
+                    <div class="card__comment--body--name--date">
+                      <p>Ben Halpern Aug 2</p>
+                    </div>
+                    <div class="card__comment--body--content">
+                      <p>
+                        I completely agree that you don't want a single mentor.
+                        The idea of having lots of people in your corner that
+                        you can talk to and get diverse opinions.
+                      </p>
+                      <p>
+                        The self direction and continuous learning component
+                        here is important too. Thanks!
+                      </p>
+                      <p>Kudos.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="number__of__coments d-flex justify-content-center">
+                  <p>See all 18 comments</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="card">
+            <div class="card__top d-flex">
+              <div class="card-stoty__meta d-flex">
+                <div class="author__picture">
+                  <a href=""
+                    ><img
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--tA2ATmyU--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1107935/8a2e2a49-6acc-499c-981c-d6c95c0518d0.jpeg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="card--user__name">
+                  <a href="#">Ibrahim Aziz</a>
+                </div>
+                <a href="#">
+                  <time datetime="2023-08-03T23:55:06Z"
+                    >Aug 3 (5 days ago)</time
+                  >
+                </a>
+              </div>
+            </div>
             <div class="card-body">
               <h5 class="card-title">
                 Creating a Sinatra API with system-wide dependency injection
@@ -104,6 +270,135 @@
                 <li class="card__tag me-2">#sinatra</li>
                 <li class="card__tag me-2">#bootstrap</li>
               </ul>
+              <a href="">
+                <div class="multiple__reactions__number">
+                  <span class="multiple__reactions--container">
+                    <span class="reaction--item">
+                      <img
+                        src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                        alt="" /></span
+                    ><span class="reaction--item">
+                      <img
+                        src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                        alt=""
+                    /></span>
+                  </span>
+                  <span class="reaction--counter">123</span>
+                </div>
+              </a>
+              <div class="card__comments--container">
+                <div class="card__comment--item d-flex">
+                  <div class="card__comment--image">
+                    <a href=""
+                      ><span
+                        ><img
+                          src="https://res.cloudinary.com/practicaldev/image/fetch/s--bqhtZWBh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/68266/a52576e7-3c2a-460e-944f-b8f5ba2af41c.jpg"
+                          alt="" /></span
+                    ></a>
+                  </div>
+                  <div class="card__comment--body">
+                    <div class="card__comment--body--name--date d-flex">
+                      <p>Casper 6 days ago</p>
+                    </div>
+                    <div
+                      class="card__comment--body--content d-flex justify-content-center"
+                    >
+                      <p>
+                        I find myself going back and forth on this subject
+                        because while I agree, it should be a good thing to rely
+                        on the tools, I have seen beginners rely too much on it
+                        to the point where if they needed to write the most
+                        basic of thing...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <p>See all 18 comments</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Third card -->
+          <div class="card">
+            <div class="card__top d-flex">
+              <div class="sponsorship__header d-flex">
+                <div class="card__title__header">DEV Community</div>
+                <button class="sponsorship__header__button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    class=""
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <h2 class="card__title">
+                <a name="community-discussions" href="#community-discussions">
+                </a>
+                Community discussions
+              </h2>
+              <p>Join the conversation</p>
+              <div class="card__body-cards">
+                <div class="itag__link shadow-lg rounded d-flex">
+                  <a href="/devteam" class="ltag__link__link">
+                    <div class="ltag__link__org__pic">
+                      <img
+                      class="rounded mt-3 ms-3"
+                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--b4kmlB-n--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://res.cloudinary.com/practicaldev/image/fetch/s--CMkjYEfB--/c_fill%2Cf_auto%2Cfl_progressive%2Ch_150%2Cq_auto%2Cw_150/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/9a7650bd-c94f-4330-b5af-ef29fbec1a39.jpg"
+                        alt="The DEV Team"
+                        width="33"
+                        height="33"
+                        loading="lazy"
+                      />
+                      <div class="ltag__link__user__pic">
+                        <img
+                        class="rounded-circle"
+                          src="https://res.cloudinary.com/practicaldev/image/fetch/s--N3P2qXdp--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://res.cloudinary.com/practicaldev/image/fetch/s--vHKcEiTe--/c_fill%2Cf_auto%2Cfl_progressive%2Ch_150%2Cq_auto%2Cw_150/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/3/13d3b32a-d381-4549-b95e-ec665768ce8f.png"
+                          alt=""
+                          width="15"
+                          height="15"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="/devteam/is-manual-testing-superior-to-automated-testing-473n"
+                    class="ltag__link__link text-decoration-none"
+                  >
+                    <div class="ltag__link__content p-3">
+                      <h2 class="text-black fw-bold fs-5">Is Manual Testing Superior to Automated Testing?</h2>
+                      <h3 class="itag__link--h3 mb-0">dev.to staff for The DEV Team ・ Jul 7</h3>
+                      <div class="ltag__link__taglist">
+                        <span class="ltag__link__tag">#discuss</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -126,6 +421,34 @@
                 <li class="card__tag me-2">#sinatra</li>
                 <li class="card__tag me-2">#bootstrap</li>
               </ul>
+              <a href="">
+                <div class="multiple__reactions__number">
+                  <span class="multiple__reactions--container">
+                    <span class="reaction--item">
+                      <img
+                        src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                        alt="" /></span
+                    ><span class="reaction--item">
+                      <img
+                        src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                        alt=""
+                    /></span>
+                  </span>
+                  <span class="reaction--counter">123</span>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -148,50 +471,34 @@
                 <li class="card__tag me-2">#sinatra</li>
                 <li class="card__tag me-2">#bootstrap</li>
               </ul>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="https://res.cloudinary.com/practicaldev/image/fetch/s--bi8ayJWG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p440p6v0qc709csgk7kj.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Creating a Sinatra API with system-wide dependency injection
-                using dry-system and rom-rb
-              </h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <ul class="card__tags d-flex flex-wrap list-unstyled">
-                <li class="card__tag me-2">#ruby</li>
-                <li class="card__tag me-2">#programming</li>
-                <li class="card__tag me-2">#architecture</li>
-                <li class="card__tag me-2">#sinatra</li>
-                <li class="card__tag me-2">#bootstrap</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="https://res.cloudinary.com/practicaldev/image/fetch/s--bi8ayJWG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p440p6v0qc709csgk7kj.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Creating a Sinatra API with system-wide dependency injection
-                using dry-system and rom-rb
-              </h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <ul class="card__tags d-flex flex-wrap list-unstyled">
-                <li class="card__tag me-2">#ruby</li>
-                <li class="card__tag me-2">#programming</li>
-                <li class="card__tag me-2">#architecture</li>
-                <li class="card__tag me-2">#sinatra</li>
-                <li class="card__tag me-2">#bootstrap</li>
-              </ul>
+              <a href="">
+                <div class="multiple__reactions__number">
+                  <span class="multiple__reactions--container">
+                    <span class="reaction--item">
+                      <img
+                        src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                        alt="" /></span
+                    ><span class="reaction--item">
+                      <img
+                        src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                        alt="" /></span
+                    ><span class="reaction--item"
+                      ><img
+                        src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                        alt=""
+                    /></span>
+                  </span>
+                  <span class="reaction--counter">123</span>
+                </div>
+              </a>
             </div>
           </div>
         </main>
