@@ -87,7 +87,6 @@
     <!--Main Section Container-->
     <div class="container">
       <div class="row">
-        <aside class="d-sm-none col-md-3 d-md-block ">
           <!-- first aside  -->
         <div id="sidebar-wrapper-left" class="first__aside f col-3 sidebar-wrapper sidebar-wrapper-left crayons-layout__sidebar-left crayons-layout__content">
           <aside class="side-bar"  aria-label="Primary sidebar ">
@@ -148,7 +147,7 @@
                   </h2>
                   <p><a class="link__card" href="https://dev.to/settings/notifications">Join our newsletter community and never miss a beat.</a>
                   </p>
-              </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -189,7 +188,7 @@
           </aside>
         </div>
         <!--  first aside end -->
-        </aside>
+        
         <main class="posts_container col-12 col-md-9">
           <header class="p-2 px-3 m:p-0 m:px-0 m:mb-2 mt-3">
             <nav class="-mx-3 m:mx-0 s:flex items-center justify-between">
@@ -766,43 +765,60 @@
       </div>
     </div>
     <!--Offcanvas-->
-
     <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
-      <div class="offcanvas-header">
-        <h2 class="offcanvas-title" id="offcanvasExampleLabel">
-          DEV Community
-        </h2>
-        <!--Button Closing-->
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body p-4">
-        <div>
-          <!--Start Body-->
-          <h2>Dev Community is a community of 1,116,034 amazing developers</h2>
-          <div>
-            We're a place where coders share, stay up-to-date and grow their
-            careers.
-          </div>
-          <!--Fin-->
-          <div
-            class="container d-flex flex-column justify-content-center align-items-center"
-          >
-            <a class="btn btn-outline-success">Create Account</a>
-            <a href="btn mt-2">Log in</a>
-          </div>
-        </div>
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel"
+  >
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title" id="offcanvasExampleLabel">
+        DEV Community
+      </h2>
+      <!--Button Closing-->
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body ">
+      <nav class="mb-4 ms-3" >
+        <ul class="navagation-links">
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/home.svg" alt=""></span>Home</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/listing.svg" alt=""></span>Listing</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/podcasts.svg" alt=""></span>Podcasts</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/" alt=""></span>Videos</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/tags.svg" alt=""></span>Tags</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/faq.svg" alt=""></span>FAQ</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/foremShop.svg" alt=""></span>Forem shop</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/ÁdvertiseOnDEV.svg" alt=""></span>Advertise on DEV</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/" alt=""></span>About</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/contact.svg" alt=""></span>Contact</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/guides.svg" alt=""></span>Guides</a></li>
+          <li><a href=""><span class="home-icon" ><img class="icons" src="./img/icons/softwareComparisons.svg" alt=""></span>Software comparisons</a></li>
+        </ul>
+      </nav>
+      <nav class="other ms-3 mb-4">
+        <h2>Other</h2>
+        <ul class="other-nav__links">
+        <li><a href=""><span><img src="./code-of-conduct.svg" alt=""></span>Code of Conduct</a></li>
+        <li><a href=""><span><img src="./privacy-policy.svg" alt=""></span>Privacy Policy</a></li>
+        <li><a href=""><span><img src="./terms-of-use.svg" alt=""></span>Terms of use</a></li>
+      </ul>
+      </nav>
+      <div class="social-media-icons d-flex justify-content-start align-items-end mt-2 ms-3">
+        <a href="./twt.svg"><span><img src="./img/icons/twitter.svg" alt=""></span></a>
+        <a href="./twt.svg"><span><img src="./img/icons/facebook.svg" alt=""></span></a>
+        <a href="./twt.svg"><span><img src="./img/icons/github.svg" alt=""></span></a>
+        <a href="./twt.svg"><span><img src="./img/icons/instagram.svg" alt=""></span></a>
+        <a href="./twt.svg"><span><img src="./img/icons/twitch.svg" alt=""></span></a>
+        <a href="./twt.svg"><span><img src="./img/icons/mastodon.svg" alt=""></span></a>
       </div>
     </div>
+  </div>
+ 
     <!--Offcanvas end-->
     <!-- BOOTSTRAP -->
     <script
