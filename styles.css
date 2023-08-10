@@ -39,11 +39,6 @@
   margin-bottom: 5px;
 }
 
-.card-top {
-  align-items: center;
-  justify-content: space-between;
-}
-
 .sponsorship__header {
   align-items: center;
   margin-top: 10px;
@@ -54,19 +49,28 @@
   border: none;
 }
 
-.card__title__header {
-  margin-left: 16px;
-  margin-right: 170px;
-}
-
 .itag__link--h3 {
   color: #525252;
   font-size: 14px;
 }
 
+.itag__link {
+  border: 1px solid;
+  border-color: rgb(212, 212, 212);
+}
+
 .ltag__link__tag {
   color: #404040;
   font-size: 12px;
+}
+
+.ltag__link__user__pic {
+  margin-right: 30px;
+  position: relative;
+  margin-right: 30px;
+  position: relative;
+  bottom: -27px;
+  left: 34px;
 }
 
 .anchor--decoration {
