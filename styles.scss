@@ -80,6 +80,8 @@
     align-items: flex-start;
 }
 
+
+
 .card__comment--body--name--date{
     position: relative;
     left: calc(20% - 30px);
@@ -542,3 +544,228 @@ font-size: 14px ;
 .card__title__header{
     padding: 8px;
 }
+
+@media only screen and (max-width: 320px) {
+    .comments__number_icon{
+        position: relative;
+        left: 15px;
+    }
+    .comments__number--card{
+        position: relative;
+        left: 15px;
+    }
+    .button-reaction-menu{
+        border-radius: 10px;
+        position: relative;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        img{
+            position: relative;
+            left: 20px;
+            bottom: -7px;
+        }
+    }
+    .minute-read-font{
+        font-size: 10px;
+        line-height: 10px;
+        color: gray;
+        position: relative;
+        bottom: -7px;
+        left: 20px;
+    }
+    .reactions--number-final{
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 335px) {
+    .comments__number_icon{
+        position: relative;
+        left: 15px;
+    }
+    .comments__number--card{
+        position: relative;
+        left: 15px;
+    }
+    .button-reaction-menu{
+        border-radius: 10px;
+        position: relative;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        img{
+            position: relative;
+            left: 71px;
+            bottom: -7px;
+        }
+    }
+    .minute-read-font{
+        font-size: 10px;
+        line-height: 10px;
+        color: gray;
+        position: relative;
+        bottom: -7px;
+        left: 69px;
+    }
+    .reactions--number-final{
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 400px) {
+    .comments__number_icon{
+        position: relative;
+        left: 15px;
+    }
+    .comments__number--card{
+        position: relative;
+        left: 15px;
+    }
+    .button-reaction-menu{
+        border-radius: 10px;
+        position: relative;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        img{
+            position: relative;
+            left: 113px;
+            bottom: -7px;
+        }
+    }
+    .minute-read-font{
+        font-size: 10px;
+        line-height: 10px;
+        color: gray;
+        position: relative;
+        bottom: -7px;
+        left: 100px;
+    }
+    .reactions--number-final{
+        display: none;
+    }
+  }
+
+@media only screen and (min-width: 600px) {
+    .comments__number_icon{
+        position: relative;
+        left: 15px;
+    }
+    .comments__number--card{
+        position: relative;
+        left: 15px;
+    }
+    .button-reaction-menu{
+        border-radius: 10px;
+        position: relative;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        img{
+            position: relative;
+            left: 280px;
+            bottom: -7px;
+        }
+    }
+    .minute-read-font{
+        font-size: 10px;
+        line-height: 10px;
+        color: gray;
+        position: relative;
+        bottom: -7px;
+        left: 279px;
+    }
+    .reactions--number-final{
+        position: relative;
+    }
+  }
+
+  @media only screen and (min-width: 966px) {
+    .comments__number_icon{
+        position: relative;
+        left: 15px;
+    }
+    .comments__number--card{
+        position: relative;
+        left: 15px;
+    }
+    .button-reaction-menu{
+        border-radius: 10px;
+        position: relative;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        img{
+            position: relative;
+            left: 226px;
+            bottom: -7px;
+        }
+    }
+    .minute-read-font{
+        font-size: 10px;
+        line-height: 10px;
+        color: gray;
+        position: relative;
+        bottom: -7px;
+        left: 228px;
+    }
+    .reactions--number-final{
+        position: relative;
+    }
+  }
+
+  @media only screen and (min-width: 1300px) {
+    .comments__number_icon{
+        position: relative;
+        left: 15px;
+    }
+    .comments__number--card{
+        position: relative;
+        left: 15px;
+    }
+    .button-reaction-menu{
+        border-radius: 10px;
+        position: relative;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        img{
+            position: relative;
+            left: 315px;
+            bottom: -7px;
+        }
+    }
+    .minute-read-font{
+        font-size: 10px;
+        line-height: 10px;
+        color: gray;
+        position: relative;
+        bottom: -7px;
+        left: 300px;
+    }
+  }
